@@ -32,6 +32,19 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<style>
+		.skill-images {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 100px;
+			justify-content: start; /* Bisa diganti dengan center atau space-between */
+		}
+	
+		.skill-images img {
+			max-width: 100%; /* Agar gambar tidak melampaui ukuran kolom */
+			height: auto;
+		}
+	</style>
 
 </head>
 <body id="page-top" class="politics_version">
@@ -63,6 +76,9 @@
               <a class="nav-link js-scroll-trigger" href="#about">About Us</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#skill">Skill</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
@@ -78,9 +94,9 @@
 			<h1>hello </h1>
 			<h3 class="cd-headline clip is-full-width">
 				<span class="cd-words-wrapper">
-					<b class="is-visible">i'm Andi Sa'bani Abdul Gani</b>
-                    <b>i'm Web Developer</b>
-                    <b>i'm Work as a freelance</b>
+					<b class="is-visible">Saya Andi Sa'bani Abdul Gani</b>
+					<b>Saya Web Developer</b>
+					<b>Saya Seorang Freelancer</b>
 				</span>
 			</h3>
 		</div>
@@ -91,37 +107,64 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="message-box">                        
-                        <h2>About me</h2>
-                        <h3><b>A recent graduate</b> </h3>
-                    <p>with a strong interest in web development and web applications. In my recent
-                      career, I have successfully built several website projects using programming languages such as
-                      <strong>HTML, CSS, and PHP</strong>. Additionally, I have utilized <strong>frameworks like
-                        Laravel, Bootstrap,Css and others</strong> to
-                      enhance the functionality and design of these websites. I thrive on new challenges and
-                      consistently strive to learn new things. I strongly believe that effective collaboration and
-                      communication are key to achieving common goals. <strong>My aspiration is to develop my career as
-                        a
-                        skilled and creative web developer in the technology industry</strong>.
-                    </p>
-                        <a href="C:\laragon\www\portofolio\mail\AndiSa'baniAbdulGani.pdf" class="sim-btn btn-hover-new" download="AndiSa'baniAbdulGani.pdf"><span>Download CV</span></a>
-                    </div><!-- end messagebox -->
-                </div><!-- end col -->
+                        <h2>Deskripsi Diri</h2>
+						<h3><b>Seorang lulusan</b></h3> 
+						<p>dengan minat yang kuat dalam pengembangan web dan aplikasi web. 
+							Dalam karier saya yang baru-baru ini, saya telah berhasil membangun beberapa proyek website menggunakan bahasa pemrograman seperti
+							 <strong>HTML, CSS, dan PHP</strong>. Selain itu, saya juga menggunakan <strong>framework seperti Laravel, Bootstrap, CSS, dan lainnya</strong> 
+							 untuk meningkatkan fungsionalitas dan desain dari website tersebut. Saya menyukai tantangan baru dan selalu berusaha untuk belajar hal-hal baru. 
+	 						Saya sangat percaya bahwa kolaborasi dan komunikasi yang efektif adalah kunci untuk mencapai tujuan bersama. <strong>Aspirasi saya adalah mengembangkan karier sebagai pengembang web yang terampil dan kreatif di industri teknologi.</strong></p>
+                    	</p>
+                        <!-- <a href="C:\laragon\www\portofolio\mail\AndiSa'baniAbdulGani.pdf" class="sim-btn btn-hover-new" download="AndiSa'baniAbdulGani.pdf"><span>Download CV</span></a> -->
+                    </div>
+                </div>
 
                 <div class="col-md-6">
                     <div class="right-box-pro wow fadeIn">
-                        <img src="uploads/andi.jpeg" alt="" class="img-fluid img-rounded">
-                    </div><!-- end media -->
+                        <img src="images/fotoprofil.jpeg" style="width: 500px;" alt="" class="img-fluid img-rounded">
+                    </div>
                 </div><!-- end col -->
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
+	<div id="skill" class="section lb">
+		<div class="container">
+			<div class="section-title text-left">
+				<h3>Skill</h3>
+				<div class="row">
+					<div class="row justify-content-center">
+						<div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mt-4 mb-3">
+							<img src="images/html.png" width="150px" alt="HTML">
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mt-4 mb-3">
+							<img src="images/css.png" width="150px" alt="CSS">
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-3">
+							<img src="images/laravel.png" width="250px" alt="Laravel">
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mt-4">
+							<img src="images/php.png" width="200px" alt="PHP">
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mt-4 mb-3">
+							<img src="images/mysql.png" width="200px" alt="MySQL">
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mt-4 mb-3">
+							<img src="images/bootsrap.png" width="200px" alt="Bootstrap">
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mt-4 mb-3">
+							<img src="images/tailwind.png" width="250px" alt="Tailwind CSS">
+						</div>
+					</div>					
+				</div>				
+			</div>
+		</div>
+	</div>
 	
 	<div id="portfolio" class="section lb">
 		<div class="container">
 			<div class="section-title text-left">
-                <h3>Portfolio</h3>
-                <p>Welcome to my portfolio page! Here, you will find a collection of projects I have completed. I believe that the quality and dedication I put into every task will be evident in the results I have achieved.</p>
-            </div><!-- end title -->
+                <h3>Portofolio</h3>
+				<p>Selamat datang di halaman portofolio saya! Di sini, Anda akan menemukan kumpulan proyek yang telah saya selesaikan. Saya percaya bahwa kualitas dan dedikasi yang saya curahkan dalam setiap tugas akan terlihat jelas dari hasil yang telah saya capai.</p>            </div><!-- end title -->
 			 <center>
 				 <div class="gallery-menu row">
 					 <div class="col-md-12">
@@ -129,16 +172,16 @@
 							 <button class="active" data-filter="*">All</button>
 							 <br>
 							 <hr>
-							 <button data-filter=".petshop">Web-based Petshop application</button>
+							 <button data-filter=".petshop">Aplikasi Penjualan Pada Petshop</button>
 							 <br>
 							 <hr>
-							 <button data-filter=".atk">web-based Office Stationery Sales application</button>
+							 <button data-filter=".atk">Aplikasi Penjualan ATK</button>
 							 <br>
 							 <hr>
-							 <button data-filter=".rental">web-based Car Rental app</button>
+							 <button data-filter=".rental">Aplikasi Penyewaan Rental Mobil</button>
 							 <br>
 							 <hr>
-							 <button data-filter=".obat">web-based Drug Stock application</button>
+							 <button data-filter=".obat">Aplikasi Stok Obat</button>
 						 </div>
 					 </div>
 				 </div>
