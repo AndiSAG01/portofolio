@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andi-Dev</title>
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar fixed w-full z-50 py-4 px-6 lg:px-16 bg-secondary shadow"
+    >
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <img src="/images/logo.png" alt="Logo" class="logo" />
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="nav-link text-white hover:text-purple-300"
+            >Beranda</a
+          >
+          <a href="about.html" class="nav-link text-white hover:text-purple-300"
+            >Tentang</a
+          >
+          <a
+            href="project.html"
+            class="nav-link text-white hover:text-purple-300"
+            >Projek Web</a
+          >
+          <a
+            href="contact.html"
+            class="nav-link text-white hover:text-purple-300"
+            >Kontak</a
+          >
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-toggle"
+          class="md:hidden text-white focus:outline-none"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden flex flex-col space-y-4 px-6 mt-4 pb-4"
+      >
+        <a href="index.html" class="nav-link text-white hover:text-purple-300"
+          >Beranda</a
+        >
+        <a href="about.html" class="nav-link text-white hover:text-purple-300"
+          >Tentang</a
+        >
+        <a href="project.html" class="nav-link text-white hover:text-purple-300"
+          >Projek Web</a
+        >
+        <a href="contact.html" class="nav-link text-white hover:text-purple-300"
+          >Kontak</a
+        >
+      </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects" class="pt-40 pb-40 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-16">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800"
+        >
+          <span class="text-purple-600">Projek</span> Saya
+        </h2>
+        <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">
+          Berikut ini beberapa proyek terbaru saya. Setiap proyek dibuat dengan
+          cermat untuk memecahkan masalah tertentu.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="\petshop\dasboard.jpeg"
+                alt="Project 1"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Landing-Page E-commerce Petshop
+                </h3>
+                <span
+                  class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                  >2023</span
+                >
+              </div>
+              <p class="text-gray-600 mb-4">
+                Toko online berfitur lengkap dengan manajemen produk,
+                fungsionalitas keranjang belanja, dan pembayaran aman.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Boostrap</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Laravel</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >PHP</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="/petshop/admin.jpeg"
+                alt="Project 2"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Landing-Page Admin E-commerce Petshop
+                </h3>
+                <span
+                  class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                  >2023</span
+                >
+              </div>
+              <p class="text-gray-600 mb-4">
+                Landing page admin E-commerce Petshop memudahkan pengelolaan
+                produk, pesanan, dan data pengguna dengan tampilan dashboard
+                yang informatif dan mudah digunakan.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Boostrap</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Laravel</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >PHP</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="\kasir\dashboard.png"
+                alt="Project 3"
+                class="w-30 h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Landing-Page POS Bengkel
+                </h3>
+                <span
+                  class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                  >2023</span
+                >
+              </div>
+              <p class="text-gray-600 mb-4">
+                Landing page admin POS Bengkel menyajikan dashboard ringkas
+                untuk mengelola layanan, transaksi, stok sparepart, dan data
+                pelanggan secara efisien dan real-time.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Boostrap</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Laravel</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >PHP</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Livewire</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="\rental\admin.jpeg"
+                alt="Project 3"
+                class="w-30 h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Landing-Page Admin Rental Mobil
+                </h3>
+                <span
+                  class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                  >2023</span
+                >
+              </div>
+              <p class="text-gray-600 mb-4">
+                Landing page admin Rental Mobil memudahkan pengelolaan armada,
+                pemesanan, pelanggan, dan pembayaran melalui dashboard yang
+                intuitif dan real-time.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Boostrap</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Laravel</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >PHP</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="\rental\dasboard.jpeg"
+                alt="Project 3"
+                class="w-30 h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Landing-Page Pelanggan Rental Mobil
+                </h3>
+                <span
+                  class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                  >2023</span
+                >
+              </div>
+              <p class="text-gray-600 mb-4">
+                Landing page pelanggan Rental Mobil menyajikan antarmuka
+                sederhana untuk melihat daftar mobil, melakukan pemesanan,
+                mengecek ketersediaan, dan melihat detail harga sewa dengan
+                cepat dan mudah.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Boostrap</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Laravel</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >PHP</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="\obat\pegawai.jpeg"
+                alt="Project 3"
+                class="w-30 h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Landing-Page Admin Manajeman Stok Obat
+                </h3>
+                <span
+                  class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                  >2024</span
+                >
+              </div>
+              <p class="text-gray-600 mb-4">
+                Landing page admin Manajemen Stok Obat memudahkan pengelolaan
+                data obat, stok masuk dan keluar, serta pemantauan ketersediaan
+                obat melalui dashboard yang ringkas dan informatif.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Boostrap</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Laravel</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >PHP</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="\fotografer\admin.jpeg"
+                alt="Project 3"
+                class="w-30 h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Landing-Page Admin Sewa Fotografer
+                </h3>
+                <span
+                  class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                  >2024</span
+                >
+              </div>
+              <p class="text-gray-600 mb-4">
+                Landing page admin Sewa Fotografer mempermudah pengelolaan
+                jadwal pemotretan, data klien, layanan fotografi, dan pembayaran
+                melalui dashboard yang terstruktur dan mudah digunakan.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Boostrap</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Laravel</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >PHP</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="\fotografer\user.jpeg"
+                alt="Project 3"
+                class="w-30 h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Landing-Page Pelanggan Sewa Fotografer
+                </h3>
+                <span
+                  class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                  >2024</span
+                >
+              </div>
+              <p class="text-gray-600 mb-4">
+                Landing page pelanggan Sewa Fotografer memungkinkan pengguna
+                melihat layanan fotografi, memilih jadwal, memesan fotografer,
+                dan melakukan pembayaran dengan mudah melalui antarmuka yang
+                ramah pengguna.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Boostrap</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Laravel</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >PHP</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9 -->
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="\cbt\admin.jpeg"
+                alt="Project 3"
+                class="w-30 h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Landing-Page admin Ujian Online
+                </h3>
+                <span
+                  class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                  >2024</span
+                >
+              </div>
+              <p class="text-gray-600 mb-4">
+                Landing page admin Ujian Online menyediakan fitur untuk
+                mengelola soal, jadwal ujian, peserta, serta memantau hasil
+                ujian secara real-time melalui dashboard yang informatif dan
+                mudah digunakan.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Boostrap</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Laravel</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >PHP</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >JavaScript</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 10 -->
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="\cbt\siswa.jpeg"
+                alt="Project 3"
+                class="w-30 h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Landing-Page Siswa Ujian Online
+                </h3>
+                <span
+                  class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                  >2024</span
+                >
+              </div>
+              <p class="text-gray-600 mb-4">
+                Landing page siswa Ujian Online memungkinkan peserta mengakses
+                jadwal ujian, mengikuti ujian, dan melihat hasil secara langsung
+                melalui tampilan yang sederhana dan mudah dipahami.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Boostrap</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Laravel</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >PHP</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >JavaScript</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 11 -->
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="\tour\user.jpeg"
+                alt="Project 3"
+                class="w-30 h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Landing-Page Pelanggan Kerinci Smart Tourism
+                </h3>
+                <span
+                  class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                  >2025</span
+                >
+              </div>
+              <p class="text-gray-600 mb-4">
+                Landing page pelanggan Touring memudahkan pengguna untuk melihat
+                paket wisata, jadwal keberangkatan, melakukan pemesanan, dan
+                mendapatkan informasi lengkap tentang destinasi dengan antarmuka
+                yang menarik dan responsif.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Boostrap</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >CodeIgniter 4</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >PHP</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >JavaScript</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 12 -->
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="\tour\admin.jpeg"
+                alt="Project 3"
+                class="w-30 h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Landing-Page Admin Kerinci Smart Tourism
+                </h3>
+                <span
+                  class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                  >2025</span
+                >
+              </div>
+              <p class="text-gray-600 mb-4">
+                Landing page admin Touring memungkinkan pengelolaan paket
+                wisata, jadwal keberangkatan, data pelanggan, dan transaksi
+                pemesanan melalui dashboard yang efisien dan mudah dioperasikan.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Boostrap</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >CodeIgniter 4</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >PHP</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >JavaScript</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 13 -->
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="\sibeka\admin.jpeg"
+                alt="Project 3"
+                class="w-30 h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Landing-Page Admin BK-SIASN
+                </h3>
+                <span
+                  class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                  >2025</span
+                >
+              </div>
+              <p class="text-gray-600 mb-4">
+                Landing page admin BK-SIASN memungkinkan pengelolaan data
+                pegawai, pembagian tugas, serta monitoring setiap kontrak yang
+                dilakukan oleh pegawai. Admin juga dapat memantau progres
+                pekerjaan, melakukan evaluasi kinerja, dan mengatur beban kerja
+                secara terstruktur melalui dashboard yang intuitif dan
+                responsif.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Boostrap</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Laravel</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >PHP</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Livewire</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 14 -->
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg"
+          >
+            <div class="overflow-hidden">
+              <img
+                src="\sibeka\user.jpeg"
+                alt="Project 3"
+                class="w-30 h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Landing-Page Pegawai BK-SIASN
+                </h3>
+                <span
+                  class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs"
+                  >2025</span
+                >
+              </div>
+              <p class="text-gray-600 mb-4">
+                Landing page pegawai BK-SIASN memungkinkan pegawai untuk memilih
+                tugas sesuai peran, memberikan skala beban kerja pada setiap
+                tugas, serta mengunduh hasil penilaian yang telah dikonfirmasi
+                oleh admin. Semua fitur disajikan dalam tampilan yang intuitif
+                untuk mendukung pelaporan dan pemantauan kinerja secara mandiri.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Boostrap</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Laravel</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >PHP</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs"
+                  >Livewire</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-6 lg:px-16">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <a href="#" class="text-2xl font-bold">
+              <span class="text-purple-400">Port</span>folio
+            </a>
+            <p class="mt-4 text-gray-400">
+              Menciptakan pengalaman digital yang memberikan dampak.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Tautan Cepat</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-gray-400 hover:text-purple-400 transition"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-400 hover:text-purple-400 transition"
+                  >Tentang</a
+                >
+              </li>
+              <li>
+                <a
+                  href="project.html"
+                  class="text-gray-400 hover:text-purple-400 transition"
+                  >Projek Web</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-gray-400 hover:text-purple-400 transition"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Layanan</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-purple-400 transition"
+                  >Pengembangan Web</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-purple-400 transition"
+                  >Desain UI/UX</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-purple-400 transition"
+                  >Konsultasi</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-center items-center"
+        >
+          <p class="text-gray-500 text-sm">
+            &copy; 2025 Andi Sa'bani Abdul Gani.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a
+      href="#home"
+      id="back-to-top"
+      class="hidden fixed bottom-6 right-6 bg-purple-600 w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-purple-700 transition transform hover:-translate-y-1"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+
+        // Back to top button toggle
+        const backToTop = document.getElementById("back-to-top");
+        if (window.scrollY > 300) {
+          backToTop.classList.remove("hidden");
+        } else {
+          backToTop.classList.add("hidden");
+        }
+      });
+
+      // Toggle mobile menu
+      const menuToggle = document.getElementById("mobile-menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuToggle.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
